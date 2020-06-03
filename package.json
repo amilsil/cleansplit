@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "webpack":"webpack",
-      "build:app": "webpack --config webpack.config.app.js",
-      "build:vendors": "webpack --config webpack.config.dll.js"
+    "rimraf":"rimraf",
+    "clean": "rimraf ./build",
+    "webpack": "webpack",
+    "build:app": "webpack --config webpack.config.app.js",
+    "build:vendors": "webpack --config webpack.config.dll.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.3.0",
     "path": "^0.12.7",
+    "rimraf": "^3.0.2",
     "serve": "^11.3.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"

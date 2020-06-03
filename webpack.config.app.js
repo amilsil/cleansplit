@@ -16,7 +16,7 @@ module.exports = {
     plugins: [
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require("./vendor/vendor-manifest.json")
+            manifest: require("./build/vendor-manifest.json")
         }),
         new HtmlWebpackPlugin({
             template: "./index.html",
