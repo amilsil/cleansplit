@@ -20,7 +20,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./index.html",
-            filename: "./build/index.html"
+            filename: "index.html"
         }),
         new AddAssetHtmlPlugin({
             filepath: path.resolve(__dirname, "./build/vendor.js")
