@@ -5,7 +5,9 @@ const AddAssetHtmlPlugin = require("add-asset-html-webpack-plugin");
 
 module.exports = {
     context: __dirname,
-    entry: path.join(__dirname, "app.jsx"),
+    // Ends up creating a main.js with the app.jsx references,
+    // That contains the whole application build.
+    entry: path.join(__dirname, "src", "app.jsx"),
     devtool: "#source-map",
     mode: "development",
     output: {
@@ -26,6 +28,9 @@ module.exports = {
             filepath: path.resolve(__dirname, "./build/vendor.js")
         })
     ],
+    devServer: {
+        contentBase: "./build",
+    },
     module: {
         rules: [
             {
