@@ -10,7 +10,8 @@
     "watch": "webpack --watch --config webpack.config.chunked.js",
     "dev": "webpack-dev-server --open --config webpack.config.chunked.js",
     "build:app": "webpack --config webpack.config.app.js",
-    "build:vendors": "webpack --config webpack.config.dll.js"
+    "build:vendors": "webpack --config webpack.config.dll.js",
+    "build:chunks": "webpack --config webpack.config.chunked.js"
   },
   "author": "",
   "license": "ISC",
